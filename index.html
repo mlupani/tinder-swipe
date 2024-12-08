@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Swipe</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <main>
+        <section>
+            <header>
+                <img src="./tinder-logo.webp" alt="Tinder Logo">
+            </header>
+
+            <div class="cards">
+
+                <article>
+                    <img src="./photos/2.webp" alt="Alex, brown hair man, 25 years old" />
+                    <h2>Alex <span>25</span> </h2>
+                    <div class="choice nope">NOPE</div>
+                    <div class="choice like">LIKE</div>
+                </article>
+
+                <article>
+                    <img src="./photos/1.webp" alt="Leila, Red hair woman, 22 years old" />
+                    <h2>Leila <span>22</span> </h2>
+                    <div class="choice nope">NOPE</div>
+                    <div class="choice like">LIKE</div>
+                </article>
+
+                <span>
+                    No hay mas personas cerca de ti
+                </span>
+
+            </div>
+
+            <footer>
+                <button class="is-undo" aria-label="undo" onClick="undoCard()"></button>
+                <button class="is-remove is-big" onClick="likeNotLike(0)" aria-label="remove"></button>
+                <button class="is-star" aria-label="star"></button>
+                <button class="is-fav is-big" onClick="likeNotLike(1)" aria-label="fav"></button>
+                <button class="is-zap" aria-label="zap"></button>
+            </footer>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
